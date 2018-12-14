@@ -12,7 +12,8 @@
 3. Navigate to [PRET](https://github.com/RUB-NDS/PRET) location: `cd $PRET`
 4. Install PRETty into PRET: `git clone https://github.com/BusesCanFly/PRETty`
 5. Navigate to PRETty: `cd PREtty`
-6. Make PRETty executable: `chmod +x PRETty.py`
+6. Navigate to PRETty: `cd PRETTy` (not a typo)
+7. Make PRETty executable: `chmod +x PRETty.py`
 * One line variant: `sudo pip install os time termcolor && cd $PRET && git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
 
 ## Lists
