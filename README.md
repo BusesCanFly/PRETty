@@ -27,3 +27,4 @@
 ## Disclaimer
 ### The standard internet fun disclaimer applies. Don't commit crimes, be responsible. 
 ### I am in no way responsible for any and everything you do with PRETty. 
+The code is gross, noob-y and inefficient. But it works, and it's my first "real" project. So i'm prood :D
