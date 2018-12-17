@@ -28,26 +28,26 @@ cprint("Step 6: >:)", 'yellow')
 
 gen_new= str(raw_input("Generate new IP list? [y/N] "))
 if gen_new == str('y'):
+	#interface= raw_input("Wireless interface name: [wlan0/wlp58s0] ")
+	#cprint("Ctrl+C when scan is ready (more time for larger networks)", 'green')
+	#sleep(2.5)
+	#os.system('sudo netdiscover -r [IP RANGE] -i '+ interface +' '+ ' | grep "Hewlett Packard" > ./IP/list')
+	#cprint('Successfully processed IP\'s', 'green')
+	#os.system('cat ./IP/list | sort -u > ./IP/uniq_list &&  awk \'{print $1}\' ./IP/uniq_list > ./IP/HP_list')
+	#sleep(2.5)
+	#cprint('Successfully cleaned raw data', 'green')
+	#os.system('rm ./IP/list && rm ./IP/uniq_list')
+
 	interface= raw_input("Wireless interface name: [wlan0/wlp58s0] ")
 	cprint("Ctrl+C when scan is ready (more time for larger networks)", 'green')
 	sleep(2.5)
-	os.system('sudo netdiscover -r 10.160.0.0/16 -i '+ interface +' '+ ' | grep "Hewlett Packard" > ./IP/list')
+	print('sudo netdiscover -r [IP RANGE] -i '+ interface +' '+ ' | grep "Hewlett Packard" > ./IP/list')
 	cprint('Successfully processed IP\'s', 'green')
-	os.system('cat ./IP/list | sort -u > ./IP/uniq_list &&  awk \'{print $1}\' ./IP/uniq_list > ./IP/HP_list')
+	print('cat ./IP/list | sort -u > ./IP/uniq_list &&  awk \'{print $1}\' ./IP/uniq_list > ./IP/HP_list')
 	sleep(2.5)
 	cprint('Successfully cleaned raw data', 'green')
-	os.system('rm ./IP/list && rm ./IP/uniq_list')
-
-	#interface= raw_input("Wireless interface name: ")
-        #cprint("Ctrl+C when scan is ready (more time for larger networks)", 'green')
-        #time.sleep(2.5)
-        #print('sudo netdiscover -r 10.160.0.0/16 -i '+ interface +' '+ ' | grep "Hewlett Packard" > ./IP/li$
-        #cprint('Successfully processed IP\'s', 'green')
-        #print('cat ./IP/list | sort -u > ./IP/uniq_list &&  awk \'{print $1}\' ./IP/uniq_list > ./IP/HP_lis$
-        #time.sleep(2.5)
-        #cprint('Successfully cleaned raw data', 'green')
-        #print('rm ./IP/list && rm ./IP/uniq_list')
-
+	print('rm ./IP/list && rm ./IP/uniq_list')
+	
 list_answer = str(raw_input("Use default IP list? [Y/n] "))
 if list_answer == str('n'):
 	cprint('Example IP lists can be found in in ./IP', 'green')
@@ -79,6 +79,6 @@ with open(list) as inf:
 
 i=0
 while i < len(lines):
-	os.system('../pret.py '+debug_enabled+' -i '+commands_list+' -q '+lines[i]+' '+ shell_type)
-	#print('../pret.py '+debug_enabled+' -i '+commands_list+' -q '+lines[i]+' '+ shell_type)
+	#os.system('../pret.py '+debug_enabled+' -i '+commands_list+' -q '+lines[i]+' '+ shell_type)
+	print('../pret.py '+debug_enabled+' -i '+commands_list+' -q '+lines[i]+' '+ shell_type)
 	i+=1
