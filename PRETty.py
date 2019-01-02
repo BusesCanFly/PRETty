@@ -30,9 +30,9 @@ cprint("Step 6: >:)", 'yellow')
 
 gen_new= str(raw_input("Generate new IP list? [y/N] "))
 if gen_new == str('y'):
-	interface= raw_input("Wireless interface name: [wlan0/wlp58s0] ")
-	set_ip_range = raw_input("Set IP range for scanning? [y/N] ")
+	interface= raw_input("Wireless interface name: [ex. wlan0/wlp58s0] ")
 
+	set_ip_range = raw_input("Set IP range for scanning? [y/N] ")
 	if set_ip_range == str('y'):
 		ip_range = str("-r ") + str(raw_input("IP range: [ex. 192.168.0.0/16] "))
 	else:
@@ -47,6 +47,7 @@ if gen_new == str('y'):
 	cprint('Successfully cleaned raw data', 'green')
 	os.system('rm ./IP/list && rm ./IP/uniq_list')
 	sleep(1)
+
 list_answer = str(raw_input("Use default IP list? [Y/n] "))
 if list_answer == str('n'):
 	cprint('Example IP lists can be found in in ./IP', 'green')
@@ -54,7 +55,6 @@ if list_answer == str('n'):
 else:
         cprint('Using "./IP/HP_list" as IP range', 'green')
         list = str('./IP/HP_list')
-
 
 commands_list = str(raw_input("Use default command list? [Y/n] "))
 if commands_list == str('n'):
@@ -74,7 +74,6 @@ shell_type = raw_input("Shell Type: [ps, pjl, pcl] ")
 
 with open(list) as inf:
         lines = [line.strip() for line in inf]
-#print(lines)
 
 i=0
 while i < len(lines):
