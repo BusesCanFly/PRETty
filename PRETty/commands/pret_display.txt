@@ -1,3 +1,0 @@
-display "Proccesing..."
-info status
-exit
