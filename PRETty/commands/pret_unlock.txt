@@ -1,2 +1,0 @@
-unlock 1337
-exit
