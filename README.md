@@ -7,12 +7,12 @@
 
 ## Installation
 1. Install [PRET](https://github.com/RUB-NDS/PRET) and all required dependencies
-2. Install requirements: `sudo pip install time termcolor`
+2. Install requirements: `sudo pip install termcolor`
 3. Navigate to where you installed [PRET](https://github.com/RUB-NDS/PRET): `cd $PRET`
 4. Install PRETty into PRET: `git clone https://github.com/BusesCanFly/PRETty`
 5. Navigate to PRETty: `cd PRETty`
 6. Make PRETty executable: `chmod +x PRETty.py`
-* One line variant (from [PRET](https://github.com/RUB-NDS/PRET) folder): `sudo pip install time termcolor && git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
+* One line variant (from [PRET](https://github.com/RUB-NDS/PRET) folder): `sudo pip install termcolor && git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
 
 ## Lists
 * PRETty automatically scans the LAN for HP printers and creates an IP list for itself
