@@ -1,9 +1,0 @@
-replace up down
-replace down up
-replace right wrong
-replace wrong right
-replace left right
-replace right left
-replace yes no
-replace no yes
-exit
