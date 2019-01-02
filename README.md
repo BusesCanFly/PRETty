@@ -1,7 +1,7 @@
 # PRETty
 "PRinter Exploitation Toolkit" LAN automation tool
 
-![alt text](https://github.com/BusesCanFly/PRETty/blob/master/PRETty.png "PRETTy")
+![alt text](https://github.com/BusesCanFly/PRETty/blob/master/screenshot.png "PRETTy")
 
 # GUIDE:
 
