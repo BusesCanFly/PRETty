@@ -43,10 +43,10 @@ if gen_new == str('y'):
 	os.system('sudo netdiscover ' + ip_range + ' -i '+ interface +' '+ ' | grep "Hewlett Packard" > ./IP/list')
 	cprint('Successfully processed IP\'s', 'green')
 	os.system('cat ./IP/list | sort -u > ./IP/uniq_list &&  awk \'{print $1}\' ./IP/uniq_list > ./IP/HP_list')
-	sleep(2.5)
+	sleep(1.5)
 	cprint('Successfully cleaned raw data', 'green')
 	os.system('rm ./IP/list && rm ./IP/uniq_list')
-
+	sleep(1)
 list_answer = str(raw_input("Use default IP list? [Y/n] "))
 if list_answer == str('n'):
 	cprint('Example IP lists can be found in in ./IP', 'green')
