@@ -18,7 +18,7 @@
 * PRETty automatically scans the LAN for HP printers and creates an IP list for itself
 	* However, you can place custom IP lists in `PRETty/IP/`
 * PRETty comes with pre-made command files for PRET located in `PRETty/commands/`
-	* However, you can place additional command files in `PRETty/IP/`
+	* However, you can place additional command files in `PRETty/commands/`
 	
 ## Usage
 1. Run PRETty with `./PRETty.py` and follow the prompts :D
