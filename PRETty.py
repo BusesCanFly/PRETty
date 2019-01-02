@@ -40,7 +40,7 @@ if gen_new == str('y'):
 
 	cprint("Ctrl+C when scan is ready (more time for larger networks)", 'green')
 	sleep(2.5)
-	print('sudo netdiscover ' + ip_range + ' -i '+ interface +' '+ ' | grep "Hewlett Packard" > ./IP/list')
+	os.system('sudo netdiscover ' + ip_range + ' -i '+ interface +' '+ ' | grep "Hewlett Packard" > ./IP/list')
 	cprint('Successfully processed IP\'s', 'green')
 	os.system('cat ./IP/list | sort -u > ./IP/uniq_list &&  awk \'{print $1}\' ./IP/uniq_list > ./IP/HP_list')
 	sleep(2.5)
