@@ -12,7 +12,7 @@
 4. Install PRETty into PRET: `git clone https://github.com/BusesCanFly/PRETty`
 5. Navigate to PRETty: `cd PRETty`
 6. Make PRETty executable: `chmod +x PRETty.py`
-* One line variant (from [PRET](https://github.com/RUB-NDS/PRET) folder): `sudo pip install time termcolor && git clone https://github.com/BusesCanFly/PRETty && chmod +x PRETty.py`
+* One line variant (from [PRET](https://github.com/RUB-NDS/PRET) folder): `sudo pip install time termcolor && git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
 
 ## Lists
 * PRETty automatically scans the LAN for HP printers and creates an IP list for itself
