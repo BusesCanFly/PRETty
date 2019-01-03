@@ -48,15 +48,17 @@ if gen_new == str('y'):
         cprint('Successfully processed raw data', 'green')
         os.system('rm ./IP/list')
         sleep(1.5)
-	cprint('\nLocated '+ str(sum(1 for line in open ('./IP/HP_list'))) +' printers\n', 'yellow')
+	cprint('\nLocated '+ str(sum(1 for line in open ('./IP/HP_list'))) +' printers, storing as ./IP/HP_list\n', 'yellow')
 
 list_answer = str(raw_input("Use default IP list? [Y/n] "))
 if list_answer == str('n'):
 	cprint('Example IP lists can be found in in ./IP', 'green')
 	list = './IP/' + str(raw_input("Which list? ./IP/"))
+	cprint('\nLoaded '+ str(sum(1 for line in open (list))) +' IP\'s\n', 'yellow')
 else:
         cprint('Using "./IP/HP_list" as IP range', 'green')
         list = str('./IP/HP_list')
+	cprint('\nLoaded '+ str(sum(1 for line in open ('./IP/HP_list'))) +' IP\'s\n', 'yellow')
 
 commands_list = str(raw_input("Use default command list? [Y/n] "))
 if commands_list == str('n'):
