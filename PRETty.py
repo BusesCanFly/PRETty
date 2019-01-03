@@ -39,14 +39,15 @@ if gen_new == str('y'):
 		ip_range = ''
 
 	cprint("Ctrl+C when scan is ready (more time for larger networks)", 'green')
-	sleep(2.5)
-	os.system('sudo netdiscover ' + ip_range + ' -i '+ interface +' '+ ' | grep "Hewlett Packard" > ./IP/list')
-	cprint('Successfully processed IP\'s', 'green')
-	os.system('cat ./IP/list | sort -u > ./IP/uniq_list &&  awk \'{print $1}\' ./IP/uniq_list > ./IP/HP_list')
-	sleep(1.5)
-	cprint('Successfully cleaned raw data', 'green')
-	os.system('rm ./IP/list && rm ./IP/uniq_list')
-	sleep(1)
+        sleep(2.5)
+	os.system('sudo netdiscover ' + ip_range + ' -i '+ interface +' '+ ' | grep "Hewlett" > ./IP/list')
+        cprint('Successfully processed IP\'s', 'green')
+	os.system('awk \'{print $1}\' ./IP/list > ./IP/IP_list')
+	os.system('cat ./IP/IP_list | sort -u  > ./IP/HP_list')
+        sleep(1.5)
+        cprint('Successfully cleaned raw data', 'green')
+        os.system('rm ./IP/list && rm ./IP/IP_list')
+        sleep(1)
 
 list_answer = str(raw_input("Use default IP list? [Y/n] "))
 if list_answer == str('n'):
