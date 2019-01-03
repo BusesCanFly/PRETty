@@ -37,16 +37,18 @@ if gen_new == str('y'):
 		ip_range = str("-r ") + str(raw_input("IP range: [ex. 192.168.0.0/16] "))
 	else:
 		ip_range = ''
-
-	cprint("Ctrl+C when scan is ready (more time for larger networks)", 'green')
+	cprint("Ctrl+C after 10-30 seconds to finish scanning (more time for larger networks)", 'green')
         sleep(2.5)
 	os.system('sudo netdiscover ' + ip_range + ' -i '+ interface +' '+ ' | grep "Hewlett" > ./IP/list')
-        cprint('Successfully collected IP\'s', 'green')
-       	os.system('awk \'{print $1}\' ./IP/list | sort -u > ./IP/HP_list')
+	cprint('Received '+ str(sum(1 for line in open ('./IP/list'))) + ' ARP requests', 'yellow')
+	sleep(1.5)
+	cprint('Successfully collected IP\'s', 'green')
+	os.system('awk \'{print $1}\' ./IP/list | sort -u > ./IP/HP_list')
 	sleep(1.5)
         cprint('Successfully processed raw data', 'green')
         os.system('rm ./IP/list')
-        sleep(1)
+        sleep(1.5)
+	cprint('\nLocated '+ str(sum(1 for line in open ('./IP/HP_list'))) +' printers\n', 'yellow')
 
 list_answer = str(raw_input("Use default IP list? [Y/n] "))
 if list_answer == str('n'):
