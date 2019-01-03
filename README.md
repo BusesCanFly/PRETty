@@ -4,6 +4,7 @@
 ![alt text](https://github.com/BusesCanFly/PRETty/blob/master/screenshot.png "Who doesn't love ASCII art?")
 
 PRETty is useful when a large number of printers are present on a network. Instead of scanning, logging, and manually running PRET againt each individual printer, PRETty will automatically discover and run choosen PRET payloads against all printers on the target network.
+
 Additionally, PRETty can be used to automate command/payload delivery to any given list of printers (See the "Lists" section)
 
 # GUIDE:
@@ -11,7 +12,7 @@ Additionally, PRETty can be used to automate command/payload delivery to any giv
 ## Installation
 1. Install [PRET](https://github.com/RUB-NDS/PRET) and all required dependencies
 2. Install requirements: `sudo pip install termcolor`
-3. Navigate to where you installed [PRET](https://github.com/RUB-NDS/PRET): `cd $PRET`
+3. Navigate to where you installed [PRET](https://github.com/RUB-NDS/PRET): `cd PRET`
 4. Install PRETty into PRET: `git clone https://github.com/BusesCanFly/PRETty`
 5. Navigate to PRETty: `cd PRETty`
 6. Make PRETty executable: `chmod +x PRETty.py`
@@ -29,4 +30,6 @@ Additionally, PRETty can be used to automate command/payload delivery to any giv
 ## Disclaimer
 ### The standard internet fun disclaimer applies. Don't commit crimes, be responsible. 
 ### I am in no way responsible for anything and everything you do with PRETty.
-The code is gross, noob-y and inefficient. But it works, and it's my first "real" project. So i'm proud :D
+
+
+VGhlIGNvZGUgaXMgZ3Jvc3MsIG5vb2IteSBhbmQgaW5lZmZpY2llbnQuIEJ1dCBpdCB3b3JrcywgYW5kIGl0J3MgbXkgZmlyc3QgcmVhbCBwcm9qZWN0LiBTbyBpJ20gcHJvdWQgOkQK
