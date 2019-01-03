@@ -60,13 +60,21 @@ else:
         list = str('./IP/HP_list')
 	cprint('\nLoaded '+ str(sum(1 for line in open ('./IP/HP_list'))) +' IP\'s\n', 'yellow')
 
-commands_list = str(raw_input("Use default command list? [Y/n] "))
+commands_list = str(raw_input("Use default ./commands/pret_pagecount.txt command file? [Y/n] "))
 if commands_list == str('n'):
-	cprint('Example command lists can be found in ./commands', 'green')
-        commands_list = './commands/' + str(raw_input("Which command list? "+'./commands/'))
+	cprint('Example command lists: ( ./commands)', 'green')
+	os.system('ls ./commands/')
+	print('\n')
+	commands_list = './commands/' + str(raw_input("Which command list? "+'./commands/'))
+	cprint('Commands: ', 'green')
+	os.system('cat '+commands_list)
+	print('\n')
 else:
         cprint('Using "./commands/pret_pagecount.txt" as commands', 'green')
         commands_list = str('./commands/pret_pagecount.txt')
+	cprint('Commands: ', 'green')
+	os.system('cat ./commands/pret_pagecount.txt')
+	print('\n')
 
 debug = raw_input('Enable PRET debug mode? [y/N]')
 if debug == str('y'):
