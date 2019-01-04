@@ -39,7 +39,7 @@ if gen_new == str('y'):
 		ip_range = ''
 	cprint("Ctrl+C after 10-30 seconds to finish scanning (more time for larger networks)", 'green')
         sleep(2.5)
-	os.system('sudo netdiscover ' + ip_range + ' -i '+ interface +' '+ ' | grep -i -e "Hewlett" -e "Brother" -e "Kyocera" -e "HP" -e "LaserJet" -e "Lexmark" > ./IP/list')
+	os.system('sudo netdiscover ' + ip_range + ' -i '+ interface +' '+ ' | grep -wi \'Hewlett\|Brother\|Keyocera\' > ./IP/list')
 	cprint('Received '+ str(sum(1 for line in open ('./IP/list'))) + ' ARP requests', 'yellow')
 	sleep(1.5)
 	cprint('Successfully collected IP\'s', 'green')
