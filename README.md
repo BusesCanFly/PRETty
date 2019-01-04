@@ -19,7 +19,7 @@ Additionally, PRETty can be used to automate command/payload delivery to any giv
 * One line variant (from [PRET](https://github.com/RUB-NDS/PRET) folder): `sudo pip install termcolor && && sudo apt -y install netdiscover git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
 
 ## Lists
-* PRETty automatically scans the LAN for HP printers and creates an IP list for itself
+* PRETty automatically scans the LAN for HP/Brother/Kyocera printers and creates an IP list for itself
 	* However, you can place custom IP lists in `PRETty/IP/`
 * PRETty comes with pre-made command files for PRET located in `PRETty/commands/`
 	* However, you can place additional command files in `PRETty/commands/`
