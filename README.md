@@ -36,12 +36,12 @@ VGhlIGNvZGUgaXMgZ3Jvc3MsIG5vb2IteSBhbmQgaW5lZmZpY2llbnQuIEJ1dCBpdCB3b3JrcywgYW5k
 
 ## Links
 PRETty has been seen in:
-*(https://www.kitploit.com/2019/01/pretty-printer-exploitation-toolkit-lan.html?utm_source=dlvr.it&utm_medium=twitter)
-*(https://www.hack4.net/2019/01/pretty-printer-exploitation-toolkit-lan.html)
-*(https://www.reddit.com/r/blackhat/comments/ad7hre/printer_exploitation_toolkit_lan_automation_tool/)
-*(https://twitter.com/netbiosX/status/1081855584260030464)
-*(https://twitter.com/MightyPearMan/status/1082728115531640832)
-*(https://twitter.com/wugeej/status/1082783931248693250)
-*(https://twitter.com/atmega644/status/1082432552403693569)
+*https://www.kitploit.com/2019/01/pretty-printer-exploitation-toolkit-lan.html?utm_source=dlvr.it&utm_medium=twitter
+*https://www.hack4.net/2019/01/pretty-printer-exploitation-toolkit-lan.html
+*https://www.reddit.com/r/blackhat/comments/ad7hre/printer_exploitation_toolkit_lan_automation_tool/
+*https://twitter.com/netbiosX/status/1081855584260030464
+*https://twitter.com/MightyPearMan/status/1082728115531640832
+*https://twitter.com/wugeej/status/1082783931248693250
+*https://twitter.com/atmega644/status/1082432552403693569
 
 _Thank you!_
