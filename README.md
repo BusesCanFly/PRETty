@@ -13,10 +13,11 @@ Additionally, PRETty can be used to automate command/payload delivery to any giv
 1. Install [PRET](https://github.com/RUB-NDS/PRET) and all required dependencies
 2. Install requirements: `sudo pip install termcolor` and `sudo apt -y install netdiscover`
 3. Navigate to where you installed [PRET](https://github.com/RUB-NDS/PRET): `cd PRET`
-4. Install PRETty into PRET: `git clone https://github.com/BusesCanFly/PRETty`
+4. Install PRETty into [PRET](https://github.com/RUB-NDS/PRET): `git clone https://github.com/BusesCanFly/PRETty`
 5. Navigate to PRETty: `cd PRETty`
 6. Make PRETty executable: `chmod +x PRETty.py`
 * One line variant (from [PRET](https://github.com/RUB-NDS/PRET) folder): `sudo pip install termcolor && && sudo apt -y install netdiscover git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
+*One line variant w/ [PRET](https://github.com/RUB-NDS/PRET) installation: `pip install colorama pysnmp && apt-get install imagemagick ghostscript && git clone https://github.com/RUB-NDS/PRET && sudo pip install termcolor && && sudo apt -y install netdiscover git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
 
 ## Lists
 * PRETty automatically scans the LAN for HP/Brother/Kyocera printers and creates an IP list for itself
@@ -27,9 +28,8 @@ Additionally, PRETty can be used to automate command/payload delivery to any giv
 ## Usage
 1. Run PRETty with `./PRETty.py` and follow the prompts :D
 
-## Disclaimer
+## Disclaimers
 ### The standard internet fun disclaimer applies. Don't commit crimes, be responsible. 
 ### I am in no way responsible for anything and everything you do with PRETty.
 
-
-VGhlIGNvZGUgaXMgZ3Jvc3MsIG5vb2IteSBhbmQgaW5lZmZpY2llbnQuIEJ1dCBpdCB3b3JrcywgYW5kIGl0J3MgbXkgZmlyc3QgcmVhbCBwcm9qZWN0LiBTbyBpJ20gcHJvdWQgOkQK
+VGhlIGNvZGUgaXMgZ3Jvc3MsIG5vb2IteSBhbmQgaW5lZmZpY2llbnQuIEJ1dCBpdCB3b3JrcywgYW5kIGl0J3MgbXkgZmlyc3QgcmVhbCBwcm9qZWN0LiBTbyBJJ20gcHJvdWQgOkQKClRoaXMgaXMgYSBmb3IgbG9vcC4gVGhlIG9ubHkgcGFydCBvZiB0aGlzIGNvZGUgdGhhdCBtYXR0ZXJzIGlzIGF0IHRoZSBib3R0b20uCgpodHRwczovL3R3aXR0ZXIuY29tL0J1c2VzQ2FuRmx5L3N0YXR1cy8xMDgwOTQ5OTkzMTgyMjk0MDE3
