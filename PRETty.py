@@ -64,7 +64,7 @@ else:
 
 commands_list = str(raw_input("Use default ./commands/pret_pagecount.txt command file? [Y/n] "))
 if commands_list == str('n'):
-	cprint('Example command lists: ( ./commands)', 'green')
+	cprint('Example command lists: (./commands)', 'green')
 	os.system('ls ./commands/')
 	print('\n')
 	commands_list = './commands/' + str(raw_input("Which command list? "+'./commands/'))
@@ -72,19 +72,20 @@ if commands_list == str('n'):
 	os.system('cat '+commands_list)
 	print('\n')
 else:
-        cprint('Using "./commands/pret_pagecount.txt" as commands', 'green')
+        cprint('Using "./commands/pret_pagecount.txt" as PRET commands', 'green')
         commands_list = str('./commands/pret_pagecount.txt')
-	cprint('Commands: ', 'green')
+	cprint('Commands: ', 'yellow')
 	os.system('cat ./commands/pret_pagecount.txt')
 	print('\n')
 
-debug = raw_input('Enable PRET debug mode? [y/N]')
+shell_type = raw_input("Shell Type: [ps, pjl, pcl] ")
+
+debug = raw_input('Enable PRET debug mode? [y/N] ')
 if debug == str('y'):
         debug_enabled = str('-d')
 else:
         debug_enabled = ''
-
-shell_type = raw_input("Shell Type: [ps, pjl, pcl] ")
+print('')
 
 with open(list) as inf:
         lines = [line.strip() for line in inf]
