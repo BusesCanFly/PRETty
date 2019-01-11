@@ -41,7 +41,10 @@ PRETty has been seen in:
 * https://twitter.com/MightyPearMan/status/1082728115531640832
 * https://twitter.com/wugeej/status/1082783931248693250
 * https://twitter.com/atmega644/status/1082432552403693569
+* https://twitter.com/zerohat/status/1081874617969577985
 
 _Thank you!_
 
+---
 VGhlIGNvZGUgaXMgZ3Jvc3MsIG5vb2IteSBhbmQgaW5lZmZpY2llbnQuIEJ1dCBpdCB3b3JrcywgYW5kIGl0J3MgbXkgZmlyc3QgcmVhbCBwcm9qZWN0LiBTbyBJJ20gcHJvdWQgOkQKClRoaXMgaXMgYSBmb3IgbG9vcC4gVGhlIG9ubHkgcGFydCBvZiB0aGlzIGNvZGUgdGhhdCBtYXR0ZXJzIGlzIGF0IHRoZSBib3R0b20uCgpodHRwczovL3R3aXR0ZXIuY29tL0J1c2VzQ2FuRmx5L3N0YXR1cy8xMDgwOTQ5OTkzMTgyMjk0MDE3
+---
