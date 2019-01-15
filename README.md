@@ -36,6 +36,7 @@ Additionally, PRETty can be used to automate command/payload delivery to any giv
 PRETty has been seen in:
 * https://www.kitploit.com/2019/01/pretty-printer-exploitation-toolkit-lan.html
 * https://www.hack4.net/2019/01/pretty-printer-exploitation-toolkit-lan.html
+* https://moretip.com/pretty/
 * https://www.reddit.com/r/blackhat/comments/ad7hre/printer_exploitation_toolkit_lan_automation_tool/
 * https://twitter.com/netbiosX/status/1081855584260030464
 * https://twitter.com/MightyPearMan/status/1082728115531640832
