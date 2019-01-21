@@ -5,6 +5,7 @@ from time import sleep
 from termcolor import colored, cprint
 main_color = str('green')
 sub_color = str('blue')
+line_color = str('red')
 
 cprint(" ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ", main_color)
 cprint("▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌ ", main_color)
@@ -17,10 +18,10 @@ cprint("▐░▌          ▐░▌     ▐░▌  ▐░▌               ▐�
 cprint("▐░▌          ▐░▌      ▐░▌ ▐░█▄▄▄▄▄▄▄▄▄      ▐░▌          ▐░▌          ▐░▌      ", main_color)
 cprint("▐░▌          ▐░▌       ▐░▌▐░░░░░░░░░░░▌     ▐░▌          ▐░▌          ▐░▌      ", main_color)
 cprint(" ▀            ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀       ▀            ▀            ▀       ", main_color)
-cprint("  BusesCanFly   		  			50 52 45 54 74 79       ", sub_color)
-cprint("--------------------------------------------------------------------------------", 'red')
-cprint("              \"PRinter Exploitation Toolkit\" LAN automation tool              ", 'white')
-cprint("--------------------------------------------------------------------------------", 'red')
+cprint("  BusesCanFly   		  			50 52 45 54 74 79      ", sub_color)
+cprint("-------------------------------------------------------------------------------", line_color)
+cprint("              \"PRinter Exploitation Toolkit\" LAN automation tool             ", 'white')
+cprint("-------------------------------------------------------------------------------", line_color)
 cprint("Step 1: Generate IP list", 'yellow')
 cprint("Step 2: Select IP list", 'yellow')
 cprint("Step 3: Select PRET command input file", 'yellow')
@@ -54,7 +55,10 @@ if gen_new == str('y'):
 
 list_answer = str(raw_input("Use default IP list? [Y/n] "))
 if list_answer == str('n'):
-	cprint('Example IP lists can be found in in ./IP', 'green')
+	cprint('An example IP list can be found at ./IP/example', 'green')
+	cprint('Available IP lists: ', 'green')
+        os.system('ls ./IP/')
+        print('\n')
 	list = './IP/' + str(raw_input("Which list? ./IP/"))
 	cprint('\nLoaded '+ str(sum(1 for line in open (list))) +' IP\'s\n', 'yellow')
 else:
