@@ -40,7 +40,6 @@ PRETty has been seen in:
 * https://hackertor.com/tag/pretty/
 * http://fullcrypters.net/pretty-ferramenta-de-automacao-de-lan-printer-exploitation-toolkit/
 * https://www.chainnews.com/articles/860508131277.htm
-
 * https://www.reddit.com/r/blackhat/comments/ad7hre/printer_exploitation_toolkit_lan_automation_tool/
 * https://twitter.com/netbiosX/status/1081855584260030464
 * https://twitter.com/MightyPearMan/status/1082728115531640832
