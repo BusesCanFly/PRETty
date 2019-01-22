@@ -120,7 +120,7 @@ def PRETty_cli():
         os.system('sudo arp-scan -g '+args.ip_range+' -W ./IP/scan.pcap')
 	PrinterLogSort()
 	sleep(1)
-	list = args.ip_file
+	list = './IP/Printer_list'
         with open(list) as inf:
                 lines = [line.strip() for line in inf]
         i=0
