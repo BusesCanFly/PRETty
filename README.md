@@ -29,8 +29,8 @@ Additionally, PRETty can be used to automate command/payload delivery to any giv
 * Run PRETty with `./PRETty.py` and follow the prompts :D
 * For more advanced users, run `./PRETty.py -h`
 	* `./PRETty.py --cli` enables CLI mode. (No user input required)
-	* (optional) Arguments are: `-r [IP range to scan] -c [Command list file to use] -s [PRET shell type]`
-	* The default `./PRETty.py --cli` will scan the current LAN, and run `./commands/pret_pagecount.txt` on every printer found 
+	* The default `./PRETty.py --cli` will scan the current LAN, and run `./commands/pret_pagecount.txt` on every printer found
+	* (optional) Additional arguments are: `-r [IP range to scan] -c [Command list file to use] -s [PRET shell type]`
 
 ## Disclaimers
 ### The standard internet fun disclaimer applies. Don't commit crimes, be responsible. 
