@@ -42,19 +42,21 @@ parser.add_argument('-s', '--shell_type', type=str, default='ps',
 
 args = parser.parse_args()
 
+sleep_time=1.5
 def PrinterLogSort():
 	os.system('tshark -r ./IP/scan.pcap > ./IP/pcap.txt')
         os.system('cat ./IP/pcap.txt | grep -iE "Hewlett|Brother|Kyocera|Laserjet" > ./IP/raw_list')
         os.system('awk \'{print $8}\' ./IP/raw_list > ./IP/Printer_list')
-        sleep(1.5)
+        sleep(sleep_time)
         cprint('Successfully processed raw data', 'green')
         os.system('rm -rf ./IP/scan.pcap && rm -rf ./IP/pcap.txt && rm -rf ./IP/raw_list')
-        sleep(1.5)
+        sleep(sleep_time)
         cprint('Cleaned raw data', 'green')
-        sleep(1.5)
+        sleep(sleep_time)
         cprint('\nLocated '+ str(sum(1 for line in open ('./IP/Printer_list'))) +' printers, storing as ./IP/Printer_list\n', 'yellow')
 
 def PRETty_Interactive():
+	sleep_time=1.5
 	gen_new= str(raw_input("Generate new IP list? [y/N] "))
 	if gen_new == str('y'):
 
@@ -68,6 +70,7 @@ def PRETty_Interactive():
 	        sleep(1.5)
 		os.system('sudo arp-scan -g '+ip_range+' -W ./IP/scan.pcap')
 		cprint('Successfully collected IP\'s', 'green')
+
 		PrinterLogSort()
 
 	list_answer = str(raw_input("Use default IP list? [Y/n] "))
@@ -117,6 +120,7 @@ def PRETty_Interactive():
                 i+=1
 
 def PRETty_cli():
+	sleep_time=0.5
         os.system('sudo arp-scan -g '+args.ip_range+' -W ./IP/scan.pcap')
 	PrinterLogSort()
 	sleep(1)
@@ -125,7 +129,7 @@ def PRETty_cli():
                 lines = [line.strip() for line in inf]
         i=0
         while i < len(lines):
-                os.system('../pret.py -i '+args.commands_list+' -q '+lines[i]+' '+ args.shell_type)
+                os.system('../pret.py -i ./commands/'+args.commands_list+' -q '+lines[i]+' '+ args.shell_type)
                 i+=1
 
 if args.cli:
