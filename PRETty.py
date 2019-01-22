@@ -36,7 +36,7 @@ parser.add_argument('--cli', dest='cli', action='store_true',
 parser.add_argument('-r', '--ip_range', type=str, default='--localnet',
                     help='IP range to scan')
 parser.add_argument('-c', '--commands_list', type=str, default='./commands/pret_pagecount.txt',
-                    help='File for PRET commands')
+                    help='Name of command list file to use')
 parser.add_argument('-s', '--shell_type', type=str, default='ps',
                     help='Printer shell type for PRET')
 
