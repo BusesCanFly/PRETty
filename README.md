@@ -11,22 +11,26 @@ Additionally, PRETty can be used to automate command/payload delivery to any giv
 
 ## Installation
 1. Install [PRET](https://github.com/RUB-NDS/PRET) and all required dependencies
-2. Install requirements: `sudo pip install -U termcolor` and `sudo apt -y install arp-scan tshark`
+2. Install requirements: `sudo pip install -U argparse termcolor` and `sudo apt -y install arp-scan tshark`
 3. Navigate to where you installed [PRET](https://github.com/RUB-NDS/PRET): `cd PRET`
 4. Install PRETty into [PRET](https://github.com/RUB-NDS/PRET): `git clone https://github.com/BusesCanFly/PRETty`
 5. Navigate to PRETty: `cd PRETty`
 6. Make PRETty executable: `chmod +x PRETty.py`
-* One line variant (from [PRET](https://github.com/RUB-NDS/PRET) folder): `sudo apt -y install arp-scan tshark && sudo pip install -U termcolor && git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
-* One line variant w/ [PRET](https://github.com/RUB-NDS/PRET) installation: `sudo apt -y install imagemagick ghostscript arp-scan tshark && sudo pip install -U termcolor colorama pysnmp && git clone https://github.com/RUB-NDS/PRET && cd PRET && git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
+* One line variant (from [PRET](https://github.com/RUB-NDS/PRET) folder): `sudo apt -y install arp-scan tshark && sudo pip install -U argparse termcolor && git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
+* One line variant w/ [PRET](https://github.com/RUB-NDS/PRET) installation: `sudo apt -y install imagemagick ghostscript arp-scan tshark && sudo pip install -U argparse termcolor colorama pysnmp && git clone https://github.com/RUB-NDS/PRET && cd PRET && git clone https://github.com/BusesCanFly/PRETty && cd PRETty && chmod +x PRETty.py`
 
 ## Lists
 * PRETty automatically scans the LAN for HP/Brother/Kyocera printers and creates an IP list for itself
 	* However, you can place custom IP lists in `PRETty/IP/`
-* PRETty comes with pre-made command files for PRET located in `PRETty/commands/`
-	* However, you can place additional command files in `PRETty/commands/`
+* PRETty comes with pre-made command list files for PRET located in `PRETty/commands/`
+	* However, you can place additional command list files in `PRETty/commands/`
 	
 ## Usage
-1. Run PRETty with `./PRETty.py` and follow the prompts :D
+* Run PRETty with `./PRETty.py` and follow the prompts :D
+* For more advanced users, run `./PRETty.py -h`
+	* `./PRETty.py --cli` enables CLI mode. (No user input required)
+	* (optional) Arguments are: `-r [IP range to scan] -c [Command list file to use] -s [PRET shell type]`
+	* The default `./PRETty.py --cli` will scan the current LAN, and run `./commands/pret_pagecount.txt` on every printer found 
 
 ## Disclaimers
 ### The standard internet fun disclaimer applies. Don't commit crimes, be responsible. 
