@@ -63,10 +63,10 @@ def PrinterLogSort():
 
 def PRETty_Interactive():
 	gen_new= str(raw_input("Generate new IP list? [y/N] "))
-	if gen_new == str('y'):
+	if gen_new == 'y':
 
 		set_ip_range = raw_input("Set IP range for scanning? [y/N] ")
-		if set_ip_range == str('y'):
+		if set_ip_range == 'y':
 			ip_range = str(raw_input("IP range: [ex. 192.168.0.0/16] "))
 		else:
 			ip_range = '--localnet'
@@ -79,7 +79,7 @@ def PRETty_Interactive():
 		PrinterLogSort()
 
 	list_answer = str(raw_input("Use default IP list? [Y/n] "))
-	if list_answer == str('n'):
+	if list_answer == 'n':
 		cprint('An example IP list can be found at ./IP/example', 'green')
 		cprint('Available IP lists: ', 'green')
 	        os.system('ls ./IP/')
@@ -88,11 +88,11 @@ def PRETty_Interactive():
 		cprint('\nLoaded '+ str(sum(1 for line in open (list))) +' IP\'s\n', 'yellow')
 	else:
 	        cprint('Using "./IP/Printer_list" as IP range', 'green')
-	        list = str('./IP/Printer_list')
+	        list = './IP/Printer_list'
 		cprint('\nLoaded '+ str(sum(1 for line in open ('./IP/Printer_list'))) +' IP\'s\n', 'yellow')
 
 	commands_list = str(raw_input("Use default ./commands/pret_pagecount.txt command file? [Y/n] "))
-	if commands_list == str('n'):
+	if commands_list == 'n':
 		cprint('Example command lists: (./commands)', 'green')
 		os.system('ls ./commands/')
 		print('\n')
@@ -102,7 +102,7 @@ def PRETty_Interactive():
 		print('\n')
 	else:
 	        cprint('Using "./commands/pret_pagecount.txt" as PRET commands', 'green')
-	        commands_list = str('./commands/pret_pagecount.txt')
+	        commands_list = './commands/pret_pagecount.txt'
 		cprint('Commands: ', 'yellow')
 		os.system('cat ./commands/pret_pagecount.txt')
 		print('\n')
@@ -110,8 +110,8 @@ def PRETty_Interactive():
 	shell_type = raw_input("Shell Type: [ps, pjl, pcl] ")
 
 	debug = raw_input('Enable PRET debug mode? [y/N] ')
-	if debug == str('y'):
-	        debug_enabled = str('-d')
+	if debug == 'y':
+	        debug_enabled = '-d'
 	else:
 	        debug_enabled = ''
 	print('')
