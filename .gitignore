@@ -1,4 +1,6 @@
-HP_list
-list
-LAN_list
+Printer_list
+raw_list
+scan.pcap
+pcap.txt
+scan.txt
 dev/
