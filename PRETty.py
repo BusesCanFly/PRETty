@@ -35,7 +35,7 @@ parser.add_argument('--cli', dest='cli', action='store_true',
                     help='Enable CLI mode (No user input)')
 parser.add_argument('-r', '--ip_range', type=str, default='--localnet',
                     help='IP range to scan')
-parser.add_argument('-c', '--commands_list', type=str, default='../commands/pret_pagecount.txt',
+parser.add_argument('-c', '--commands_list', type=str, default='./commands/pret_pagecount.txt',
                     help='File for PRET commands')
 parser.add_argument('-s', '--shell_type', type=str, default='ps',
                     help='Printer shell type for PRET')
@@ -66,7 +66,7 @@ def PRETty_Interactive():
 
 		cprint("ARP scanning LAN for devices...", 'green')
 	        sleep(1.5)
-		print('sudo arp-scan -g '+ip_range+' -W ./IP/scan.pcap')
+		os.system('sudo arp-scan -g '+ip_range+' -W ./IP/scan.pcap')
 		cprint('Successfully collected IP\'s', 'green')
 		PrinterLogSort()
 
