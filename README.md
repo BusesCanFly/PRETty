@@ -1,6 +1,7 @@
 # PRETty
 "PRinter Exploitation Toolkit" LAN automation tool
-(It's just a python wrapper for PRET)
+ (It's just a python wrapper for PRET... actually it's really just a for loop)
+
 ![alt text](https://github.com/BusesCanFly/PRETty/blob/master/screenshot.png "Who doesn't love ASCII art?")
 
 PRETty is useful when a large number of printers are present on a network. Instead of scanning, logging, and manually running PRET againt each individual printer, PRETty will automatically discover and run choosen PRET payloads against all printers on the target network.
